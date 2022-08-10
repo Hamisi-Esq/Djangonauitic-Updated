@@ -13,8 +13,8 @@ class Article(models.Model):
         return self.title
 
     def snippet(self):
-        return self.body[:100]
+        return self.body[:100] +"..."
 
     #add in thumbnail later
-    
+
     #add in author later
