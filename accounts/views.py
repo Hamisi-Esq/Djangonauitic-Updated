@@ -29,5 +29,6 @@ def login_view(request):
 
 def logout_view(request):
     if request.method == 'POST':
-        logout(request.POST)
+        logout(request)
         return redirect('articles:list')
+    
